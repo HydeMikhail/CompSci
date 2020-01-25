@@ -1,3 +1,26 @@
 {
-    "python.linting.enabled": true
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.pythonPath": "/home/mhyde/vEnvs/py36/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--module-naming-style=snake_case",
+        "--const-naming-style=UPPER_CASE",
+        "--class-naming-style=PascalCase",
+        "--function-naming-style=camelCase",
+        "--method-naming-style=snake_case",
+        "--attr-naming-style=camelCase",
+        "--argument-naming-style=camelCase",
+        "--variable-naming-style=camelCase",
+        "--class-attribute-naming-style=camelCase",
+        "--inlinevar-naming-style=camelCase"
+    ],
+    "python.autoComplete.extraPaths": [
+        "/home/mhyde/arm_cws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "python.jediEnabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Sublime Material Theme - Dark"
 }

@@ -43,17 +43,18 @@ class Queue:
 
 if __name__ == '__main__':
     queue = Queue(5)
+    print('\n')
     queue.enqueue('A')
     queue.enqueue('B')
     queue.enqueue('C')
     queue.enqueue('D')
     queue.enqueue('E')
-    print('\n')
     queue.enqueue('F')
-
+    print('\n')
     print(queue.dequeue())
     print(queue.dequeue())
     print(queue.dequeue())
     print(queue.dequeue())
     print(queue.dequeue())
     print(queue.dequeue())
+    print('\n')

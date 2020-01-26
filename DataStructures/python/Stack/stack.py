@@ -39,26 +39,13 @@ class Stack:
         return self.size < self.limit
 
 if __name__ == '__main__':
-    stack = Stack(5)
-    stack.push('E')
-    print(stack.size)
-    stack.push('D')
-    print(stack.size)
-    stack.push('C')
-    print(stack.size)
-    stack.push('B')
-    print(stack.size)
-    stack.push('A')
-    print(stack.size)
-    stack.pop()
-    print(stack.size)
-    stack.pop()
-    print(stack.size)
-    stack.pop()
-    print(stack.size)
-    print(stack.peek())
-    print(stack.size)
-    stack.pop()
-    print(stack.size)
-    print(stack.peek())
-    print(stack.size)
+    my_stack = Stack()
+    word = input('Enter a word to reverse ::: ')
+    reversed_word = ''
+    for char in word:
+        my_stack.push(char)
+    while my_stack.size > 0:
+        reversed_word += my_stack.pop()
+
+    print(word)
+    print(reversed_word)
